@@ -117,13 +117,13 @@ PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/734170f40b816983
 UPI_ID = environ.get('UPI_ID', 'Rishikesh-sharma09@axl') # Add your upi id here
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True) #true if you want stream feature active in your bot
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "") #if is_stream = true then add a channel id ex: -1002040575112
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002040575112") #if is_stream = true then add a channel id ex: -1002040575112
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "") #if heroku then paste the app link here ex: https://heroku......./
+URL = environ.get("URL", "https://t.me/netflixehindi") #if heroku then paste the app link here ex: https://heroku......./
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
